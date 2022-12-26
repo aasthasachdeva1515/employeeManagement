@@ -1,0 +1,34 @@
+<h1 mat-dialog-title>Add Employee</h1>
+    <div mat-dialog-content>
+        <form [formGroup]="employeeForm">
+            <mat-form-field appearance="outline">
+                <mat-label>Employee Id</mat-label>
+                <input formControlName="employeeId" matInput placeholder="Placeholder"/>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Employee Name</mat-label>
+                <input formControlName="employeeName" matInput placeholder="Placeholder"/>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Employee Branch</mat-label>
+                <mat-select formControlName="employeeBranch" placeholder="Category">
+                    <mat-option value="IT">IT</mat-option>
+                    <mat-option value="HR">HR</mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Employee Location</mat-label>
+                <input formControlName="employeeLocation" matInput placeholder="Placeholder"/>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Joining Date</mat-label>
+                <input formControlName="joiningDate" matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+        </form>
+    </div>
+    <div mat-dialog-action [align]="'end'">
+        <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+        <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="checkmethod()">{{actionBtn}}</button>
+    </div>

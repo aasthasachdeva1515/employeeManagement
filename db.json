@@ -1,0 +1,54 @@
+{
+  "employeeList": [
+    {
+      "employeeId": "101",
+      "employeeName": "Aastha",
+      "employeeBranch": "IT",
+      "employeeLocation": "Noida",
+      "joiningDate": "2022-06-30T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "employeeId": "103",
+      "employeeName": "Samira",
+      "employeeBranch": "IT",
+      "employeeLocation": "Pune",
+      "joiningDate": "2022-07-02T18:30:00.000Z",
+      "id": 3
+    },
+    {
+      "employeeId": "104",
+      "employeeName": "Ankit",
+      "employeeBranch": "IT",
+      "employeeLocation": "Noida",
+      "joiningDate": "2021-02-03T18:30:00.000Z",
+      "id": 4
+    },
+    {
+      "employeeId": "106",
+      "employeeName": "Shreya",
+      "employeeBranch": "IT",
+      "employeeLocation": "Noida",
+      "joiningDate": "2022-07-19T18:30:00.000Z",
+      "id": 6
+    },
+    {
+      "employeeId": "105",
+      "employeeName": "Rahul",
+      "employeeBranch": "IT",
+      "employeeLocation": "Bangalore",
+      "joiningDate": "2021-06-09T18:30:00.000Z",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
